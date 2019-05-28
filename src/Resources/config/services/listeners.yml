@@ -11,5 +11,6 @@ services:
             - '@webburza_sylius_wishlist.provider.logged_in_user'
             - '@webburza_sylius_wishlist.repository.wishlist'
             - '%webburza_sylius_wishlist.config.multiple%'
+            - '%webburza_sylius_wishlist.account_manageable%'
         tags:
             - { name: kernel.event_listener, event: sylius.menu.shop.account, method: addMenuItems }

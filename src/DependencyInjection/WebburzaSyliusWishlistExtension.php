@@ -22,6 +22,7 @@ final class WebburzaSyliusWishlistExtension extends Extension
         // Set configuration as a parameters in the container
         $container->setParameter('webburza_sylius_wishlist.config.multiple', $config['multiple']);
         $container->setParameter('webburza_sylius_wishlist.config.default_public', $config['default_public']);
+        $container->setParameter('webburza_sylius_wishlist.account_manageable', $config['account_manageable']);
 
         $loader = new YamlFileLoader($container, new FileLocator(__DIR__ . '/../Resources/config'));
 
